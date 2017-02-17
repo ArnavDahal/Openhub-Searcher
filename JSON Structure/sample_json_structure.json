@@ -1,0 +1,90 @@
+{
+  "response" : {
+    "status" : "success",
+    "result" : {
+      "project" : {
+        "id" : "26009",
+        "name" : "Spidr",
+        "url" : "https://www.openhub.net/p/spidr.xml",
+        "html_url" : "https://www.openhub.net/p/spidr",
+        "created_at" : "2008-11-02T21:58:28Z",
+        "updated_at" : "2016-11-06T18:49:16Z",
+        "description" : "Spidr is a versatile Ruby web spidering library that can spider a site, multiple domains, certain links or infinitely. Spidr is designed to be fast and easy to use.",
+        "homepage_url" : "http://spidr.rubyforge.org/",
+        "download_url" : "http://rubyforge.org/frs/?group_id=6264",
+        "url_name" : "spidr",
+        "vanity_url" : "spidr",
+        "medium_logo_url" : "https://s3.amazonaws.com/cloud.ohloh.net/attachments/10228/spider_med.png",
+        "small_logo_url" : "https://s3.amazonaws.com/cloud.ohloh.net/attachments/10228/spider_small.png",
+        "user_count" : "1",
+        "average_rating" : "",
+        "rating_count" : "0",
+        "review_count" : "0",
+        "analysis_id" : "29615529",
+        "tags" : {
+          "tag" : [ "web", "crawler", "web-spider", "webspider", "rdoc", "rspec", "webcrawler", "spider", "spidr", "ruby", "robot", "rubygem", "web-crawler" ]
+        },
+        "analysis" : {
+          "id" : "29615529",
+          "url" : "https://www.openhub.net/p/spidr/analyses/29615529.xml",
+          "project_id" : "26009",
+          "updated_at" : "2016-11-05T21:35:30Z",
+          "oldest_code_set_time" : "2016-11-05T21:35:18Z",
+          "min_month" : "2008-05-01",
+          "max_month" : "2016-11-01",
+          "twelve_month_contributor_count" : "6",
+          "total_contributor_count" : "13",
+          "twelve_month_commit_count" : "129",
+          "total_commit_count" : "783",
+          "total_code_lines" : "3854",
+          "factoids" : {
+            "factoid" : [ {
+              "factoid" : "\nMature, well-established codebase    ",
+              "type" : "FactoidAgeVeryOld"
+            }, {
+              "factoid" : "\nIncreasing Y-O-Y development activity    ",
+              "type" : "FactoidActivityIncreasing"
+            }, {
+              "factoid" : "\nVery well-commented source code    ",
+              "type" : "FactoidCommentsVeryHigh"
+            }, {
+              "factoid" : "\nAverage size development team    ",
+              "type" : "FactoidTeamSizeAverage"
+            } ]
+          },
+          "languages" : {
+            "graph_url" : "https://www.openhub.net/p/spidr/analyses/29615529/languages.png",
+            "language" : "\nRuby    ",
+            "percentage" : "100",
+            "color" : "A40011",
+            "id" : "12"
+          },
+          "main_language_id" : "12",
+          "main_language_name" : "Ruby"
+        },
+        "licenses" : {
+          "license" : [ {
+            "name" : "GNU General Public License v2.0 or later",
+            "vanity_url" : "gpl"
+          }, {
+            "name" : "MIT License",
+            "vanity_url" : "mit"
+          } ]
+        },
+        "project_activity_index" : {
+          "value" : "50",
+          "description" : "Moderate"
+        },
+        "links" : {
+          "link" : {
+            "title" : "Spidr RDocs",
+            "url" : "http://spidr.rubyforge.org/docs/",
+            "category" : "Documentation"
+          }
+        }
+      }
+    }
+  },
+  "filename" : "user_agent_examples.rb",
+  "Code" : "require 'rspec'\n\nshared_examples_for \"includes Spidr::Settings::UserAgent\" do\n  describe \"user_agent\" do\n    context \"default value\" do\n      it { expect(subject.user_agent).to be_nil }\n    end\n  end\n\n  describe \"user_agent=\" do\n    let(:user_agent) { 'Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405' }\n\n    before do\n      subject.user_agent = user_agent\n    end\n\n    it \"should update the user_agent\" do\n      expect(subject.user_agent).to be == user_agent\n    end\n\n    after do\n      subject.user_agent = nil\n    end\n  end\nend\n"
+}
